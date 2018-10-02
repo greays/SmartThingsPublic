@@ -202,9 +202,10 @@ def updated() {
 	state.address = url
     state.lastTime = new Date().getTime()
     state.timeSecond = refreshRateMin
-    state.averageNumber = averageNumber as int
+    //state.averageNumber = averageNumber as int
+    state.averageNumber = 5
     
-    averageReset()
+    //averageReset()
     timerLoop()
 }
 
@@ -321,7 +322,7 @@ def callback(physicalgraph.device.HubResponse hubResponse){
 }
 
 def refresh() {
-	averageReset()
+	//averageReset()
 	timerLoop()
 }
 
